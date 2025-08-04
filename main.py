@@ -31,6 +31,14 @@ clock = pygame.tine.clock()
 
 deff reset_ball():
 ball_center = (WIGTH//2,HEIGTH//2)
-global BALL_SPEED_x,BALL_SPEED_y
-BALL_SPEED_x *=-1
-BALL_SPEED_y *=-1
+global BALL_SPEED_X,BALL_SPEED_Y
+BALL_SPEED_X *=-1
+BALL_SPEED_Y *=-1
+
+while true:
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      pygame.quit()
+      sys.exit()
+    keys = pygame.key.get_pressed()
+    if key[pygame.kew] and left paddle_top
